@@ -6,14 +6,14 @@ import PropTypes from 'prop-types'
 
 export class News extends Component {
 
-  static defultProps ={
+  static defultProps = {
     country: "in",
     pageSize: 8,
     category: "general",
   }
-  
 
-  static propTypes ={
+
+  static propTypes = {
     country: PropTypes.string,
     pageSize: PropTypes.number,
     category: PropTypes.string,
@@ -29,7 +29,7 @@ export class News extends Component {
 
   async componentDidMount() {
     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=0f26ca743a5644d98163f10b817c343d&page=1&pageSize=${this.props.pageSize}`;
-    this.setState({loading:true});
+    this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
     console.log(parsedData);
@@ -41,8 +41,8 @@ export class News extends Component {
   }
   handlePreClick = async () => {
     console.log("Previous");
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=0f26ca743a5644d98163f10b817c343d&page=${this.state.page-1}&pageSize=${this.props.pageSize}`;
-    this.setState({loading:true});
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=0f26ca743a5644d98163f10b817c343d&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
+    this.setState({ loading: true });
     let data = await fetch(url);
     let parsedData = await data.json();
     console.log(parsedData);
@@ -54,9 +54,9 @@ export class News extends Component {
   };
   handleNextClick = async () => {
     console.log("Next");
-    if (!(this.state.page + 1 > Math.ceil(this.state.totalResults / this.props.pageSize))){
-      let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=0f26ca743a5644d98163f10b817c343d&page=${this.state.page+1}&pageSize=${this.props.pageSize}`;
-      this.setState({loading:true});
+    if (!(this.state.page + 1 > Math.ceil(this.state.totalResults / this.props.pageSize))) {
+      let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=0f26ca743a5644d98163f10b817c343d&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
+      this.setState({ loading: true });
       let data = await fetch(url);
       let parsedData = await data.json();
       this.setState({
@@ -78,20 +78,21 @@ export class News extends Component {
           <Spinner />
         ) : (
           <div className="row">
-            {articles.map((element) => (
+            {articles && articles.map((element) => (
               <div className="col-md-4" key={element.url}>
                 <Newsitem
                   title={element.title ? element.title : ''}
                   description={element.description ? element.description : ''}
                   imageurl={element.urlToImage ? element.urlToImage : ''}
                   newsurl={element.url ? element.url : ''}
-                  author={element.author? element.author:''}
+                  author={element.author ? element.author : ''}
                   date={element.publishedAt}
                   source={element.source.name}
                 />
               </div>
             ))}
           </div>
+
         )}
         <div className="container d-flex justify-content-between">
           <button
