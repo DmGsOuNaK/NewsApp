@@ -1,0 +1,97 @@
+{
+    "status": "ok",
+    "totalResults": 7,
+    "articles": [
+        {
+            "source": {
+                "id": "bleacher-report",
+                "name": "Bleacher Report"
+            },
+            "author": null,
+            "title": " The Champions: Season 7, Episode 1 ",
+            "description": "Fan easier, fan faster and fan better with Bleacher Report. Keep up with the latest storylines, expert analysis, highlights and scores for all your favorite sports.",
+            "url": "https://bleacherreport.com/videos/452086-the-champions-season-7-episode-1",
+            "urlToImage": null,
+            "publishedAt": "2023-06-26T16:07:19.0702906Z",
+            "content": "Change is in the air. Footballs aging stars are all getting a mysterious recruiting pitch"
+        },
+        {
+            "source": {
+                "id": "nhl-news",
+                "name": "NHL News"
+            },
+            "author": "Tom Gulitti",
+            "title": "Keller remains optimistic about Coyotes' future despite arena concerns",
+            "description": "Clayton Keller believes in the future of the Arizona Coyotes and is committed to being part of it despite a public vote going against a proposed Tempe Sports and Entertainment district last month.",
+            "url": "https://www.nhl.com/news/clayton-keller-remains-optimistic-about-arizona-coyotes-future-despite-arena-concerns/c-345004702",
+            "urlToImage": "https://cms.nhl.bamgrid.com/images/photos/345005270/1024x576/cut.jpg",
+            "publishedAt": "2023-06-26T00:04:30Z",
+            "content": "NASHVILLE --Clayton Keller believes in the future of the Arizona Coyotes and is committed to being part of it despite a public vote going against a proposed Tempe Sports and Entertainment district la… [+4017 chars]"
+        },
+        {
+            "source": {
+                "id": "fox-sports",
+                "name": "Fox Sports"
+            },
+            "author": null,
+            "title": "After USFL's Maulers, some of sports' biggest recent worst-to-first turnarounds",
+            "description": "Here are some of the biggest turnarounds in recent sports memory, from the USFL to the NFL to college football and beyond.",
+            "url": "http://www.foxsports.com/stories/usfl/after-usfls-maulers-some-of-sports-biggest-worst-to-first-turnarounds",
+            "urlToImage": "https://a57.foxsports.com/statics.foxsports.com/www.foxsports.com/content/uploads/2023/06/1408/814/06.24.23_Biggest-Worst-to-First-Turnarounds-in-Recent-Sports-Memory_Horizontal.jpg?ve=1&tl=1",
+            "publishedAt": "2023-06-25T03:51:24Z",
+            "content": "The USFL's Pittsburgh Maulers are in good company when it comes to pulling off a huge turnaround.\r\nOne year after finishing last place in their division, the Maulers finished the 2023 regular season … [+4262 chars]"
+        },
+        {
+            "source": {
+                "id": "bleacher-report",
+                "name": "Bleacher Report"
+            },
+            "author": null,
+            "title": "Fred VanVleet Live Interview ",
+            "description": "Fan easier, fan faster and fan better with Bleacher Report. Keep up with the latest storylines, expert analysis, highlights and scores for all your favorite sports.",
+            "url": "https://bleacherreport.com/videos/419837-taylor-rooks-x-fred-vanvleet",
+            "urlToImage": null,
+            "publishedAt": "2023-06-23T15:07:24.5110035Z",
+            "content": "Copyright © 2023 Bleacher Report, Inc. Turner Broadcasting System, Inc.\r\n All Rights Reserved.\r\n BleacherReport.com is part of Bleacher Report Turner Sports Network, part of the Turner Sports and Ent… [+200 chars]"
+        },
+        {
+            "source": {
+                "id": "bleacher-report",
+                "name": "Bleacher Report"
+            },
+            "author": null,
+            "title": "⚾️MIKE TROUT EXCLUSIVE",
+            "description": "Fan easier, fan faster and fan better with Bleacher Report. Keep up with the latest storylines, expert analysis, highlights and scores for all your favorite sports.",
+            "url": "https://bleacherreport.com/videos/451652-mike-trout-exclusive-interview",
+            "urlToImage": null,
+            "publishedAt": "2023-06-23T15:07:24.0892335Z",
+            "content": "MLB fans... you need to watch this. He opens up on Shohei Ohtani, World Baseball Classic, Angels' expectations and more"
+        },
+        {
+            "source": {
+                "id": "time",
+                "name": "Time"
+            },
+            "author": "Sean Gregory",
+            "title": "Introducing the 'Extra Time' Newsletter, Your Guide to the 2023 Women's World Cup",
+            "description": "Your ultimate guide to the 2023 Women's World Cup from TIME senior sports correspondent Sean Gregory.",
+            "url": "http://time.com/6287183/2023-womens-world-cup-newsletter-guide/",
+            "urlToImage": "https://api.time.com/wp-content/uploads/2023/06/2019-women-world-cup.jpg?quality=85&w=1024&h=628&crop=1",
+            "publishedAt": "2023-06-21T10:00:43Z",
+            "content": "The 2023 FIFA Women’s World Cup will be, quite simply, the biggest event in the history of women’s sports. Ticket sales for the tournament, which will take place from July 20 to August 20 in Australi… [+1322 chars]"
+        },
+        {
+            "source": {
+                "id": "nhl-news",
+                "name": "NHL News"
+            },
+            "author": "NHL.com",
+            "title": "2023 NHL Awards finalists",
+            "description": "The 2023 NHL Awards will be held at Bridgestone Arena in Nashville on June 26 (8pm ET (TNT, Sportsnet, TVA Sports). A total of 12 awards will be handed out with the General Manager of the Year winner being announced at the 2023 Upper Deck NHL Draft on June 28…",
+            "url": "https://www.nhl.com/news/2023-nhl-awards-finalists/c-344932972",
+            "urlToImage": "https://cms.nhl.bamgrid.com/images/photos/344933372/1024x576/cut.jpg",
+            "publishedAt": "2023-06-19T17:52:37Z",
+            "content": "The 2023 NHL Awards will be held at Bridgestone Arena in Nashville on June 26 (8 p.m. ET; TNT, SN, TVAS). A total of 12 awards will be handed out with the General Manager of the Year winner being ann… [+3355 chars]"
+        }
+    ]
+}
