@@ -24,7 +24,7 @@ const Home = () => {
                                 </div>
                                 <div className="text-center"><button type="submit" className="btn btn-color px-5 mb-5 w-100">Login</button></div>
                                 <div id="emailHelp" className="form-text text-center mb-5 text-dark">Not
-                                    Registered? <a href="/" className="text-dark fw-bold"> Create an
+                                    Registered? <a href="/Register" className="text-dark fw-bold"> Create an
                                         Account</a>
                                 </div>
                             </form>
