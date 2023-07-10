@@ -17,27 +17,27 @@ export default class Register extends Component {
     e.preventDefault();
     const { fname, lname, email, newpassword, confirmpassword } = this.state;
     console.log(fname, lname, email, newpassword, confirmpassword);
-    fetch("http://localhost:3000/Register",{
-      method:"POST",
-      crossDomain:true,
-      headers:{
-        "Content-type":"application.json",
-        Accept:"application/json",
-        "Access-control-Allow-Origin":"*",
+    fetch("http://localhost:3000/register", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-type": "application/json",
+        Accept: "application/json",
       },
-      body:JSON.stringify({
-        fname, 
-        lname, 
-        email, 
-        newpassword, 
-        confirmpassword
+      body: JSON.stringify({
+        fname,
+        lname,
+        email,
+        newpassword,
+        confirmpassword,
       }),
     })
-    .then((res) => res.json())
-    .then((data)=> {
-      console.log(data, "userRegister");
-    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data, "userRegister");
+      });
   }
+  
 
   render() {
     return (
