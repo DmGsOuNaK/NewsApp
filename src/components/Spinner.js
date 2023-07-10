@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
-import loading from "/Users/moudipajana/Desktop/news agreegator/src/loading.gif"
+import React, { Component } from 'react';
 
 export class Spinner extends Component {
   render() {
     return (
       <div className='text-center'>
-        <img src={loading} alt="loading"/>
+        <img src='/Users/moudipajana/Desktop/news agreegator/src/loading.png' alt="loading" />
       </div>
-    )
+    );
   }
 }
 
-export default Spinner
+export default Spinner;
