@@ -1,29 +1,6 @@
-import React, { PureComponent } from 'react';
-import axios from 'axios';
+import React, { Component } from 'react';
 
-export default class Register extends PureComponent {
-  handleSubmit = async (event) => {
-    event.preventDefault();
-
-    const { fname, lname, email, password } = event.target.elements;
-
-    try {
-      // Send a POST request to the /register endpoint on the server
-      await axios.post('/register', {
-        fname: fname.value,
-        lname: lname.value,
-        email: email.value,
-        password: password.value
-      });
-
-      // Registration successful, you can redirect the user to the login page
-      // Replace "/login" with the actual login page URL
-      window.location.href = "/login";
-    } catch (error) {
-      // Handle registration error
-      console.error("Registration failed", error);
-    }
-  };
+export default class Register extends Component {
 
   render() {
     return (
