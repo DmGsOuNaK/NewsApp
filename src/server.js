@@ -58,19 +58,19 @@ app.post("/login-user", async (req, res) => {
   if (!user) {
     return res.json({ error: "User Not found" });
   }
-  if (await bcrypt.compare(newpassword, user.newpassword)) {
+  
+  const passwordMatch = await bcrypt.compare(newpassword, user.newpassword);
+  if (passwordMatch) {
     const token = jwt.sign({ email: user.email }, JWT_SECRET, {
       expiresIn: "15m",
     });
 
-    if (res.status(201)) {
-      return res.json({ status: "ok", data: token });
-    } else {
-      return res.json({ error: "error" });
-    }
+    return res.json({ status: "ok", data: token });
   }
-  res.json({ status: "error", error: "InvAlid Password" });
+  
+  return res.json({ status: "error", error: "Invalid Password" });
 });
+
 
 app.post("/userData", async (req, res) => {
   const { token } = req.body;

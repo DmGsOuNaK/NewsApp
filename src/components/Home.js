@@ -12,35 +12,35 @@ export default class Home extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  
   handleSubmit(e) {
     e.preventDefault();
-    const { fname, lname, email, newpassword } = this.state;
-    console.log(fname, lname, email, newpassword);
-    fetch("http://localhost:3000/login-user",{
-      method:"POST",
-      crossDomain:true,
-      headers:{
-        "Content-type":"application.json",
-        Accept:"application/json",
-        "Access-control-Allow-Origin":"*",
+    const { email, newpassword } = this.state;
+    console.log(email, newpassword);
+    fetch("http://localhost:3000/login-user", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-type": "application/json",
+        Accept: "application/json",
+        "Access-control-Allow-Origin": "*",
       },
-      body:JSON.stringify({
-        fname, 
-        lname, 
-        email, 
-        newpassword
+      body: JSON.stringify({
+        email,
+        newpassword,
       }),
     })
-    .then((res) => res.json())
-    .then((data)=> {
-      console.log(data, "userRegister");
-      if(data.status === "ok") {
-        alert("login successful");
-        window.localStorage.setItem("token", data.data);
-        window.location.href="./About";
-      }
-    });
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data, "userRegister");
+        if (data.status === "ok") {
+          alert("login successful");
+          window.localStorage.setItem("token", data.data);
+          window.location.href = "./About";
+        }
+      });
   }
+  
 
   render() {
     return (
