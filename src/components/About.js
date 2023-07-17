@@ -41,8 +41,7 @@ export default class About extends React.Component {
                   <p className="aboutus-text">
                     This project has been created by:
                     <br />
-                    Sounak Mandal(20BCE2737), Abhishek Kumar(20BCE2713),
-                    Saumya Sejal(20BCE2596), Ishita Kumari(20BCE2648)
+                    Moudipa Jana(20MID0056) & Sounak Mandal(20BCE2737)
                   </p>
                   <p className="aboutus-text">
                     The news app is a comprehensive platform that keeps you
